@@ -4,7 +4,7 @@
 		<!--<a href="https://discord.js.org"><img src="https://discord.js.org/static/logo.svg" width="546" alt="discord.js" /></a>-->Falcord.js
 	</p>
 	<br />
-	<p>
+	<!--<p>
 		<a href="https://discord.gg/djs"><img src="https://img.shields.io/badge/join_us-on_discord-5865F2?logo=discord&logoColor=white" alt="Discord server" /></a>
 		<a href="https://www.npmjs.com/package/discord.js"><img src="https://img.shields.io/npm/v/discord.js.svg?maxAge=3600" alt="npm version" /></a>
 		<a href="https://www.npmjs.com/package/discord.js"><img src="https://img.shields.io/npm/dt/discord.js.svg?maxAge=3600" alt="npm downloads" /></a>
@@ -17,7 +17,7 @@
 	<p>
 		<a href="https://vercel.com/?utm_source=discordjs&utm_campaign=oss"><img src="https://raw.githubusercontent.com/discordjs/discord.js/main/.github/powered-by-vercel.svg" alt="Vercel" /></a>
 		<a href="https://www.cloudflare.com"><img src="https://raw.githubusercontent.com/discordjs/discord.js/main/.github/powered-by-workers.png" alt="Cloudflare Workers" height="44" /></a>
-	</p>
+	</p>-->
 </div>
 
 ## About
@@ -25,25 +25,27 @@
 Falcord.js is just a thing to make bots work on Falcord. It's a fork of Discord.js to change Discord specific things, to Falcord.
 <!--This repository contains multiple packages with separate [releases][github-releases]. You can find the assembled Discord API wrapper at [`discord.js`][source].--> It is a powerful [Node.js](https://nodejs.org/en) module that allows you to easily interact with the [Falcord API](https://falcord.ixchats.com/developers/docs/intro).
 
+Some things may link back to discord.js below. Does it really matter?
+
 ## Packages
 
-- `discord.js` ([source][source]) - A powerful Node.js module for interacting with the Discord API
+- `falcord.js` ([source][source]) - A powerful Node.js module for interacting with the Discord API
 - `create-discord-bot` ([source][create-discord-bot-source]) - A CLI tool to quickly scaffold a Discord bot project
-- `@discordjs/brokers` ([source][brokers-source]) - A collection of brokers for use with discord.js
-- `@discordjs/builders` ([source][builders-source]) - A utility package for easily building Discord API payloads
-- `@discordjs/collection` ([source][collection-source]) - A powerful utility data structure
-- `@discordjs/core` ([source][core-source]) - A thinly abstracted wrapper around the core components of the Discord API
-- `@discordjs/formatters` ([source][formatters-source]) - A collection of functions for formatting strings
-- `@discordjs/proxy` ([source][proxy-source]) - A wrapper around `@discordjs/rest` for running an HTTP proxy
-- `@discordjs/rest` ([source][rest-source]) - A module for interacting with the Discord REST API
-- `@discordjs/structures` ([source][structures-source]) - A wrapper around Discord's structures
-- `@discordjs/util` ([source][util-source]) - A collection of utility functions
-- `@discordjs/voice` ([source][voice-source]) - A module for interacting with the Discord Voice API
-- `@discordjs/ws` ([source][ws-source]) - A wrapper around Discord's gateway
+- `@falcordjs/brokers` ([source][brokers-source]) - A collection of brokers for use with discord.js
+- `@falcordjs/builders` ([source][builders-source]) - A utility package for easily building Discord API payloads
+- `@falcordjs/collection` ([source][collection-source]) - A powerful utility data structure
+- `@falcordjs/core` ([source][core-source]) - A thinly abstracted wrapper around the core components of the Discord API
+- `@falcordjs/formatters` ([source][formatters-source]) - A collection of functions for formatting strings
+- `@falcordjs/proxy` ([source][proxy-source]) - A wrapper around `@falcordjs/rest` for running an HTTP proxy
+- `@falcordjs/rest` ([source][rest-source]) - A module for interacting with the Discord REST API
+- `@falcordjs/structures` ([source][structures-source]) - A wrapper around Discord's structures
+- `@falcordjs/util` ([source][util-source]) - A collection of utility functions
+- `@falcordjs/voice` ([source][voice-source]) - A module for interacting with the Discord Voice API
+- `@falcordjs/ws` ([source][ws-source]) - A wrapper around Discord's gateway
 
 ## Containers
 
-- `discordjs/proxy` ([source][proxy-container-source]) - A lightweight HTTP proxy for Discord's API
+- `falcordjs/proxy` ([source][proxy-container-source]) - A lightweight HTTP proxy for Discord's API
 
 ## Links
 
@@ -51,8 +53,8 @@ Falcord.js is just a thing to make bots work on Falcord. It's a fork of Discord.
 - [Documentation][documentation]
 - [Guide][guide] ([source][guide-source])
   Also see the v13 to v14 [Update Guide][guide-update], which includes updated and removed items from the library.
-- [discord.js Discord server][discord]
-- [Discord Developers Discord server][discord-developers]
+- [Falcord Instance server][falcord]
+<!--- [Discord Developers Discord server][discord-developers]-->
 - [GitHub][source]
 - [npm][npm]
 - [Related libraries][related-libs]
@@ -63,22 +65,22 @@ Falcord.js is just a thing to make bots work on Falcord. It's a fork of Discord.
 
 ## Contributing
 
-Please read through our [contribution guidelines][contributing] before starting a pull request. We welcome contributions of all kinds, not just code! If you're stuck for ideas, look for the [good first issue][good-first-issue] label on issues in the repository. If you have any questions about the project, feel free to ask them on [Discord][discord]. Before creating your own issue or pull request, always check to see if one already exists! Don't rush contributions, take your time and ensure you're doing it correctly.
+Please read through our [contribution guidelines][contributing] before starting a pull request. We welcome contributions of all kinds, not just code! If you're stuck for ideas, look for the [good first issue][good-first-issue] label on issues in the repository. If you have any questions about the project, feel free to ask them on [Falcord][falcord]. Before creating your own issue or pull request, always check to see if one already exists! Don't rush contributions, take your time and ensure you're doing it correctly.
 
 ## Help
 
-If you don't understand something in the documentation, you are experiencing problems, or you just need a gentle nudge in the right direction, please join our [Discord server][discord].
+If you don't understand something in the documentation, you are experiencing problems, or you just need a gentle nudge in the right direction, please join our [Falcord server][falcord].
 
-[website]: https://discord.js.org
-[website-source]: https://github.com/discordjs/discord.js/tree/main/apps/website
+[website]: https://falcord.ixchats.com
+[website-source]: https://github.com/falcordapp/falcord.js/tree/main/apps/website
 [documentation]: https://discord.js.org/docs
 [guide]: https://discordjs.guide
 [guide-source]: https://github.com/discordjs/discord.js/tree/main/apps/guide
 [guide-update]: https://discordjs.guide/legacy/additional-info/changes-in-v14
-[discord]: https://discord.gg/djs
-[discord-developers]: https://discord.gg/discord-developers
-[source]: https://github.com/discordjs/discord.js/tree/main/packages/discord.js
-[npm]: https://www.npmjs.com/package/discord.js
+[falcord]: https://falcord.ixchats.com/invite/falcord
+<!--[discord-developers]: https://discord.gg/discord-developers-->
+[source]: https://github.com/falcordapp/falcord.js/tree/main/packages/discord.js
+<!--[npm]: https://www.npmjs.com/package/discord.js-->
 [related-libs]: https://falcord.ixchats.com/developers/docs/topics/community-resources#libraries
 [rpc]: https://www.npmjs.com/package/discord-rpc
 [rpc-source]: https://github.com/discordjs/RPC
