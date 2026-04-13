@@ -13,7 +13,7 @@ describe('MediaGallery', () => {
 		test('GIVEN a media gallery with pre-defined items THEN return valid toJSON data', () => {
 			const items = [
 				{ media: { url: 'https://google.com' } },
-				{ media: { url: 'https://discord.com' }, description: 'Discord' },
+				{ media: { url: 'https://falcord.ixchats.com' }, description: 'Discord' },
 			];
 
 			const gallery = new MediaGalleryBuilder({
@@ -30,7 +30,7 @@ describe('MediaGallery', () => {
 		test('GIVEN a media gallery with items added via addItems THEN return valid toJSON data', () => {
 			const gallery = new MediaGalleryBuilder();
 			const item1 = new MediaGalleryItemBuilder().setURL('https://google.com');
-			const item2 = new MediaGalleryItemBuilder().setURL('https://discord.com').setDescription('Discord');
+			const item2 = new MediaGalleryItemBuilder().setURL('https://falcord.ixchats.com').setDescription('Discord');
 
 			gallery.addItems(item1, item2);
 
@@ -38,7 +38,7 @@ describe('MediaGallery', () => {
 				type: ComponentType.MediaGallery,
 				items: [
 					{ media: { url: 'https://google.com' } },
-					{ media: { url: 'https://discord.com' }, description: 'Discord' },
+					{ media: { url: 'https://falcord.ixchats.com' }, description: 'Discord' },
 				],
 			});
 		});
@@ -48,14 +48,14 @@ describe('MediaGallery', () => {
 
 			gallery.addItems(
 				{ media: { url: 'https://google.com' } },
-				{ media: { url: 'https://discord.com' }, description: 'Discord' },
+				{ media: { url: 'https://falcord.ixchats.com' }, description: 'Discord' },
 			);
 
 			expect(gallery.toJSON()).toEqual({
 				type: ComponentType.MediaGallery,
 				items: [
 					{ media: { url: 'https://google.com' } },
-					{ media: { url: 'https://discord.com' }, description: 'Discord' },
+					{ media: { url: 'https://falcord.ixchats.com' }, description: 'Discord' },
 				],
 			});
 		});
@@ -65,14 +65,14 @@ describe('MediaGallery', () => {
 
 			gallery.addItems(
 				(builder) => builder.setURL('https://google.com'),
-				(builder) => builder.setURL('https://discord.com').setDescription('Discord'),
+				(builder) => builder.setURL('https://falcord.ixchats.com').setDescription('Discord'),
 			);
 
 			expect(gallery.toJSON()).toEqual({
 				type: ComponentType.MediaGallery,
 				items: [
 					{ media: { url: 'https://google.com' } },
-					{ media: { url: 'https://discord.com' }, description: 'Discord' },
+					{ media: { url: 'https://falcord.ixchats.com' }, description: 'Discord' },
 				],
 			});
 		});
@@ -81,7 +81,7 @@ describe('MediaGallery', () => {
 			const gallery = new MediaGalleryBuilder();
 			const items = [
 				new MediaGalleryItemBuilder().setURL('https://google.com'),
-				new MediaGalleryItemBuilder().setURL('https://discord.com').setDescription('Discord'),
+				new MediaGalleryItemBuilder().setURL('https://falcord.ixchats.com').setDescription('Discord'),
 			];
 
 			gallery.addItems(items);
@@ -90,7 +90,7 @@ describe('MediaGallery', () => {
 				type: ComponentType.MediaGallery,
 				items: [
 					{ media: { url: 'https://google.com' } },
-					{ media: { url: 'https://discord.com' }, description: 'Discord' },
+					{ media: { url: 'https://falcord.ixchats.com' }, description: 'Discord' },
 				],
 			});
 		});
@@ -101,7 +101,7 @@ describe('MediaGallery', () => {
 			gallery
 				.addItems(
 					new MediaGalleryItemBuilder().setURL('https://google.com'),
-					new MediaGalleryItemBuilder().setURL('https://discord.com').setDescription('Discord'),
+					new MediaGalleryItemBuilder().setURL('https://falcord.ixchats.com').setDescription('Discord'),
 				)
 				.spliceItems(1, 1, new MediaGalleryItemBuilder().setURL('https://discord.js.org').setDescription('Discord.JS'));
 

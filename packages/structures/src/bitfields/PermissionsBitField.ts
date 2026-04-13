@@ -12,7 +12,7 @@ export class PermissionsBitField extends BitField<keyof typeof PermissionFlagsBi
 	/**
 	 * Numeric permission flags.
 	 *
-	 * @see {@link https://discord.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags}
 	 */
 	public static override Flags = PermissionFlagsBits;
 

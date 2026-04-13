@@ -64,7 +64,7 @@ export class SectionBuilder extends ComponentBuilder<APISectionComponent> {
 	 * 	],
 	 *  accessory: {
 	 *      media: {
-	 *          url: 'https://cdn.discordapp.com/embed/avatars/3.png',
+	 *          url: 'https://falcord.ixchats.com/embed/avatars/3.png',
 	 *      },
 	 *  }
 	 * });

@@ -173,7 +173,7 @@ class GuildScheduledEvent extends Base {
     /**
      * Represents the additional metadata for a {@link GuildScheduledEvent}
      *
-     * @see {@link https://discord.com/developers/docs/resources/guild-scheduled-event#guild-scheduled-event-object-guild-scheduled-event-entity-metadata}
+     * @see {@link https://falcord.ixchats.com/developers/docs/resources/guild-scheduled-event#guild-scheduled-event-object-guild-scheduled-event-entity-metadata}
      * @typedef {Object} GuildScheduledEventEntityMetadata
      * @property {?string} location The location of the guild scheduled event
      */
@@ -532,7 +532,7 @@ class GuildScheduledEvent extends Base {
    *
    * @returns {string}
    * @example
-   * // Logs: Event: https://discord.com/events/412345678901234567/499876543211234567
+   * // Logs: Event: https://falcord.ixchats.com/events/412345678901234567/499876543211234567
    * console.log(`Event: ${guildScheduledEvent}`);
    */
   toString() {

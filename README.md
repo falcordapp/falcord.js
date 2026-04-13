@@ -1,7 +1,7 @@
 <div align="center">
 	<br />
 	<p>
-		<a href="https://discord.js.org"><img src="https://discord.js.org/static/logo.svg" width="546" alt="discord.js" /></a>
+		<!--<a href="https://discord.js.org"><img src="https://discord.js.org/static/logo.svg" width="546" alt="discord.js" /></a>-->Falcord.js
 	</p>
 	<br />
 	<p>
@@ -22,7 +22,8 @@
 
 ## About
 
-This repository contains multiple packages with separate [releases][github-releases]. You can find the assembled Discord API wrapper at [`discord.js`][source]. It is a powerful [Node.js](https://nodejs.org/en) module that allows you to easily interact with the [Discord API](https://discord.com/developers/docs/intro).
+Falcord.js is just a thing to make bots work on Falcord. It's a fork of Discord.js to change Discord specific things, to Falcord.
+<!--This repository contains multiple packages with separate [releases][github-releases]. You can find the assembled Discord API wrapper at [`discord.js`][source].--> It is a powerful [Node.js](https://nodejs.org/en) module that allows you to easily interact with the [Falcord API](https://falcord.ixchats.com/developers/docs/intro).
 
 ## Packages
 
@@ -78,7 +79,7 @@ If you don't understand something in the documentation, you are experiencing pro
 [discord-developers]: https://discord.gg/discord-developers
 [source]: https://github.com/discordjs/discord.js/tree/main/packages/discord.js
 [npm]: https://www.npmjs.com/package/discord.js
-[related-libs]: https://discord.com/developers/docs/topics/community-resources#libraries
+[related-libs]: https://falcord.ixchats.com/developers/docs/topics/community-resources#libraries
 [rpc]: https://www.npmjs.com/package/discord-rpc
 [rpc-source]: https://github.com/discordjs/RPC
 [contributing]: https://github.com/discordjs/discord.js/blob/main/.github/CONTRIBUTING.md

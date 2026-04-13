@@ -57,7 +57,7 @@ export class AutoModerationRule<Omitted extends keyof APIAutoModerationRule | ''
 	/**
 	 * The rule event type
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/auto-moderation#auto-moderation-rule-object-event-types}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/auto-moderation#auto-moderation-rule-object-event-types}
 	 */
 	public get eventType() {
 		return this[kData].event_type;
@@ -66,7 +66,7 @@ export class AutoModerationRule<Omitted extends keyof APIAutoModerationRule | ''
 	/**
 	 * The rule trigger type
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/auto-moderation#auto-moderation-rule-object-trigger-types}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/auto-moderation#auto-moderation-rule-object-trigger-types}
 	 */
 	public get triggerType() {
 		return this[kData].trigger_type;

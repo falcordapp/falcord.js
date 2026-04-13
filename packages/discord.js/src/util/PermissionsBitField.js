@@ -16,7 +16,7 @@ class PermissionsBitField extends BitField {
    *
    * @type {PermissionFlagsBits}
    * @memberof PermissionsBitField
-   * @see {@link https://discord.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags}
+   * @see {@link https://falcord.ixchats.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags}
    */
   static Flags = PermissionFlagsBits;
 

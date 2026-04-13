@@ -34,7 +34,7 @@ export class Webhook<Omitted extends keyof APIWebhook | '' = ''> extends Structu
 	/**
 	 * The type of the webhook
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/webhook#webhook-object-webhook-types}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/webhook#webhook-object-webhook-types}
 	 */
 	public get type() {
 		return this[kData].type;
@@ -64,7 +64,7 @@ export class Webhook<Omitted extends keyof APIWebhook | '' = ''> extends Structu
 	/**
 	 * The default user avatar hash of the webhook
 	 *
-	 * @see {@link https://discord.com/developers/docs/reference#image-formatting}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/reference#image-formatting}
 	 */
 	public get avatar() {
 		return this[kData].avatar;

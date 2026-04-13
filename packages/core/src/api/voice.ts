@@ -19,7 +19,7 @@ export class VoiceAPI {
 	/**
 	 * Fetches all voice regions
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/voice#list-voice-regions}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/voice#list-voice-regions}
 	 * @param options - The options for fetching the voice regions
 	 */
 	public async getVoiceRegions({ auth, signal }: Pick<RequestData, 'auth' | 'signal'> = {}) {
@@ -29,7 +29,7 @@ export class VoiceAPI {
 	/**
 	 * Fetches voice state of a user by their id
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/voice#get-user-voice-state}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/voice#get-user-voice-state}
 	 * @param options - The options for fetching user voice state
 	 */
 	public async getUserVoiceState(
@@ -46,7 +46,7 @@ export class VoiceAPI {
 	/**
 	 * Fetches the current user's voice state
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/voice#get-current-user-voice-state}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/voice#get-current-user-voice-state}
 	 * @param options - The options for fetching user voice state
 	 */
 	public async getVoiceState(guildId: Snowflake, { auth, signal }: Pick<RequestData, 'auth' | 'signal'> = {}) {
@@ -59,7 +59,7 @@ export class VoiceAPI {
 	/**
 	 * Edits a user's voice state in a guild
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/voice#modify-user-voice-state}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/voice#modify-user-voice-state}
 	 * @param guildId - The id of the guild to edit the current user's voice state in
 	 * @param userId - The id of the user to edit the voice state for
 	 * @param body - The data for editing the voice state
@@ -82,7 +82,7 @@ export class VoiceAPI {
 	/**
 	 * Edits the voice state for the current user
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/voice#modify-current-user-voice-state}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/voice#modify-current-user-voice-state}
 	 * @param guildId - The id of the guild
 	 * @param body - The data for editing the voice state
 	 * @param options - The options for editing the voice state

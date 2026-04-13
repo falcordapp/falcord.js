@@ -127,7 +127,7 @@ class BaseInteraction extends Base {
      * Mapping of integration types that the application was authorized for the related user or guild ids
      *
      * @type {AuthorizingIntegrationOwners}
-     * @see {@link https://discord.com/developers/docs/interactions/receiving-and-responding#interaction-object-authorizing-integration-owners-object}
+     * @see {@link https://falcord.ixchats.com/developers/docs/interactions/receiving-and-responding#interaction-object-authorizing-integration-owners-object}
      */
     this.authorizingIntegrationOwners = new AuthorizingIntegrationOwners(
       this.client,

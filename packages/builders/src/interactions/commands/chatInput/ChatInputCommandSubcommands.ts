@@ -20,7 +20,7 @@ export interface ChatInputCommandSubcommandGroupData {
 /**
  * Represents a folder for subcommands.
  *
- * @see {@link https://discord.com/developers/docs/interactions/application-commands#subcommands-and-subcommand-groups}
+ * @see {@link https://falcord.ixchats.com/developers/docs/interactions/application-commands#subcommands-and-subcommand-groups}
  */
 export class ChatInputCommandSubcommandGroupBuilder
 	extends SharedNameAndDescription
@@ -88,7 +88,7 @@ export class ChatInputCommandSubcommandGroupBuilder
  *
  * @mixes {@link SharedNameAndDescription}
  * @mixes {@link SharedChatInputCommandOptions}
- * @see {@link https://discord.com/developers/docs/interactions/application-commands#subcommands-and-subcommand-groups}
+ * @see {@link https://falcord.ixchats.com/developers/docs/interactions/application-commands#subcommands-and-subcommand-groups}
  */
 export class ChatInputCommandSubcommandBuilder
 	extends Mixin(SharedNameAndDescription, SharedChatInputCommandOptions)

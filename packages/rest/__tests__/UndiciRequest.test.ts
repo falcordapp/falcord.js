@@ -26,7 +26,7 @@ beforeEach(() => {
 	mockAgent.disableNetConnect(); // prevent actual requests to Discord
 	setGlobalDispatcher(mockAgent); // enabled the mock client to intercept requests
 
-	mockPool = mockAgent.get('https://discord.com');
+	mockPool = mockAgent.get('https://falcord.ixchats.com');
 	api.setAgent(mockAgent);
 });
 

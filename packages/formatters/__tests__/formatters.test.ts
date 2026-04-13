@@ -229,30 +229,30 @@ describe('Message formatters', () => {
 	});
 
 	describe('channelLink', () => {
-		test('GIVEN channelId THEN returns "https://discord.com/channels/@me/${channelId}"', () => {
-			expect<'https://discord.com/channels/@me/123456789012345678'>(channelLink('123456789012345678')).toEqual(
-				'https://discord.com/channels/@me/123456789012345678',
+		test('GIVEN channelId THEN returns "https://falcord.ixchats.com/channels/@me/${channelId}"', () => {
+			expect<'https://falcord.ixchats.com/channels/@me/123456789012345678'>(channelLink('123456789012345678')).toEqual(
+				'https://falcord.ixchats.com/channels/@me/123456789012345678',
 			);
 		});
 
-		test('GIVEN channelId WITH guildId THEN returns "https://discord.com/channels/${guildId}/${channelId}"', () => {
-			expect<'https://discord.com/channels/987654321987654/123456789012345678'>(
+		test('GIVEN channelId WITH guildId THEN returns "https://falcord.ixchats.com/channels/${guildId}/${channelId}"', () => {
+			expect<'https://falcord.ixchats.com/channels/987654321987654/123456789012345678'>(
 				channelLink('123456789012345678', '987654321987654'),
-			).toEqual('https://discord.com/channels/987654321987654/123456789012345678');
+			).toEqual('https://falcord.ixchats.com/channels/987654321987654/123456789012345678');
 		});
 	});
 
 	describe('messageLink', () => {
-		test('GIVEN channelId AND messageId THEN returns "https://discord.com/channels/@me/${channelId}/${messageId}"', () => {
-			expect<'https://discord.com/channels/@me/123456789012345678/102938475657483'>(
+		test('GIVEN channelId AND messageId THEN returns "https://falcord.ixchats.com/channels/@me/${channelId}/${messageId}"', () => {
+			expect<'https://falcord.ixchats.com/channels/@me/123456789012345678/102938475657483'>(
 				messageLink('123456789012345678', '102938475657483'),
-			).toEqual('https://discord.com/channels/@me/123456789012345678/102938475657483');
+			).toEqual('https://falcord.ixchats.com/channels/@me/123456789012345678/102938475657483');
 		});
 
-		test('GIVEN channelId AND messageId WITH guildId THEN returns "https://discord.com/channels/${guildId}/${channelId}/${messageId}"', () => {
-			expect<'https://discord.com/channels/987654321987654/123456789012345678/102938475657483'>(
+		test('GIVEN channelId AND messageId WITH guildId THEN returns "https://falcord.ixchats.com/channels/${guildId}/${channelId}/${messageId}"', () => {
+			expect<'https://falcord.ixchats.com/channels/987654321987654/123456789012345678/102938475657483'>(
 				messageLink('123456789012345678', '102938475657483', '987654321987654'),
-			).toEqual('https://discord.com/channels/987654321987654/123456789012345678/102938475657483');
+			).toEqual('https://falcord.ixchats.com/channels/987654321987654/123456789012345678/102938475657483');
 		});
 	});
 
@@ -348,13 +348,13 @@ describe('Message formatters', () => {
 	describe('applicationDirectory', () => {
 		test('GIVEN application id THEN returns application directory store', () => {
 			expect(applicationDirectory('123456789012345678')).toEqual(
-				'https://discord.com/application-directory/123456789012345678/store',
+				'https://falcord.ixchats.com/application-directory/123456789012345678/store',
 			);
 		});
 
 		test('GIVEN application id AND SKU id THEN returns SKU within the application directory store', () => {
 			expect(applicationDirectory('123456789012345678', '123456789012345678')).toEqual(
-				'https://discord.com/application-directory/123456789012345678/store/123456789012345678',
+				'https://falcord.ixchats.com/application-directory/123456789012345678/store/123456789012345678',
 			);
 		});
 	});

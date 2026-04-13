@@ -28,7 +28,7 @@ export interface RESTOptions {
 	/**
 	 * The base api path, without version
 	 *
-	 * @defaultValue `'https://discord.com/api'`
+	 * @defaultValue `'https://falcord.ixchats.com/api'`
 	 */
 	api: string;
 	/**
@@ -41,7 +41,7 @@ export interface RESTOptions {
 	/**
 	 * The cdn path
 	 *
-	 * @defaultValue `'https://cdn.discordapp.com'`
+	 * @defaultValue `'https://falcord.ixchats.com'`
 	 */
 	cdn: string;
 	/**

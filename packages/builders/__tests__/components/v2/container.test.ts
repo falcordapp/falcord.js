@@ -179,7 +179,7 @@ describe('Container Components', () => {
 				new ContainerBuilder()
 					.addMediaGalleryComponents(
 						new MediaGalleryBuilder()
-							.addItems({ media: { url: 'https://discord.com' } })
+							.addItems({ media: { url: 'https://falcord.ixchats.com' } })
 							.setId(3)
 							.clearId(),
 					)
@@ -190,7 +190,7 @@ describe('Container Components', () => {
 				components: [
 					{
 						type: ComponentType.MediaGallery,
-						items: [{ media: { url: 'https://discord.com' } }],
+						items: [{ media: { url: 'https://falcord.ixchats.com' } }],
 					},
 				],
 				spoiler: true,

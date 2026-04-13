@@ -38,7 +38,7 @@ export class MediaGalleryBuilder extends ComponentBuilder<APIMediaGalleryCompone
 	 * 		{
 	 * 			description: "Some text here",
 	 * 			media: {
-	 * 				url: 'https://cdn.discordapp.com/embed/avatars/2.png',
+	 * 				url: 'https://falcord.ixchats.com/embed/avatars/2.png',
 	 * 			},
 	 * 		},
 	 * 	],
@@ -52,7 +52,7 @@ export class MediaGalleryBuilder extends ComponentBuilder<APIMediaGalleryCompone
 	 * 		{
 	 * 			description: "alt text",
 	 * 			media: {
-	 * 				url: 'https://cdn.discordapp.com/embed/avatars/5.png',
+	 * 				url: 'https://falcord.ixchats.com/embed/avatars/5.png',
 	 * 			},
 	 * 		},
 	 * 	],

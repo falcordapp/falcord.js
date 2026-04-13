@@ -25,7 +25,7 @@ export class TeamMember<Omitted extends keyof APITeamMember | '' = ''> extends S
 	/**
 	 * User's membership state on the team
 	 *
-	 * @see {@link https://discord.com/developers/docs/topics/teams#data-models-membership-state-enum}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/topics/teams#data-models-membership-state-enum}
 	 */
 	public get membershipState() {
 		return this[kData].membership_state;
@@ -41,7 +41,7 @@ export class TeamMember<Omitted extends keyof APITeamMember | '' = ''> extends S
 	/**
 	 * Role of the team member
 	 *
-	 * @see {@link https://discord.com/developers/docs/topics/teams#team-member-roles-team-member-role-types}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/topics/teams#team-member-roles-team-member-role-types}
 	 */
 	public get role() {
 		return this[kData].role;

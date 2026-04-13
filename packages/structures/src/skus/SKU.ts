@@ -33,7 +33,7 @@ export class SKU<Omitted extends keyof APISKU | '' = ''> extends Structure<APISK
 	/**
 	 * Type of SKU
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/sku#sku-object-sku-types}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/sku#sku-object-sku-types}
 	 */
 	public get type() {
 		return this[kData].type;

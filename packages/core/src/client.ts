@@ -226,7 +226,7 @@ export class Client extends AsyncEventEmitter<MappedEvents> {
 	/**
 	 * Requests guild members from the gateway and returns an async iterator that yields the data from each guild members chunk event.
 	 *
-	 * @see {@link https://discord.com/developers/docs/topics/gateway-events#request-guild-members}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/topics/gateway-events#request-guild-members}
 	 * @param options - The options for the request
 	 * @param timeout - The timeout for waiting for each guild members chunk event
 	 * @example
@@ -313,7 +313,7 @@ export class Client extends AsyncEventEmitter<MappedEvents> {
 	/**
 	 * Requests guild members from the gateway.
 	 *
-	 * @see {@link https://discord.com/developers/docs/topics/gateway-events#request-guild-members}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/topics/gateway-events#request-guild-members}
 	 * @param options - The options for the request
 	 * @param timeout - The timeout for waiting for each guild members chunk event
 	 * @example
@@ -340,7 +340,7 @@ export class Client extends AsyncEventEmitter<MappedEvents> {
 	/**
 	 * Requests soundboard sounds from the gateway and returns an async iterator that yields the data from each soundboard sounds event.
 	 *
-	 * @see {@link https://discord.com/developers/docs/topics/gateway-events#request-soundboard-sounds}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/topics/gateway-events#request-soundboard-sounds}
 	 * @param options - The options for the request
 	 * @param timeout - The timeout for waiting for each soundboard sounds
 	 * @example
@@ -412,7 +412,7 @@ export class Client extends AsyncEventEmitter<MappedEvents> {
 	/**
 	 * Requests soundboard sounds from the gateway.
 	 *
-	 * @see {@link https://discord.com/developers/docs/topics/gateway-events#request-soundboard-sounds}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/topics/gateway-events#request-soundboard-sounds}
 	 * @param options - The options for the request
 	 * @param timeout - The timeout for waiting for each soundboard sounds event
 	 * @example
@@ -439,7 +439,7 @@ export class Client extends AsyncEventEmitter<MappedEvents> {
 	/**
 	 * Updates the voice state of the bot user
 	 *
-	 * @see {@link https://discord.com/developers/docs/topics/gateway-events#update-voice-state}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/topics/gateway-events#update-voice-state}
 	 * @param options - The options for updating the voice state
 	 */
 	public async updateVoiceState(options: GatewayVoiceStateUpdateData) {

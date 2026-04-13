@@ -62,7 +62,7 @@ export class StickerPack<Omitted extends keyof APIStickerPack | '' = ''> extends
 	/**
 	 * The id of the sticker pack's banner image
 	 *
-	 * @see {@link https://discord.com/developers/docs/reference#image-formatting}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/reference#image-formatting}
 	 */
 	public get bannerAssetId() {
 		return this[kData].banner_asset_id;

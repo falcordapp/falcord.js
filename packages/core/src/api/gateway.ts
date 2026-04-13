@@ -9,7 +9,7 @@ export class GatewayAPI {
 	/**
 	 * Gets gateway information.
 	 *
-	 * @see {@link https://discord.com/developers/docs/events/gateway#get-gateway}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/events/gateway#get-gateway}
 	 * @param options - The options for fetching the gateway information
 	 */
 	public async get({ signal }: Pick<RequestData, 'signal'> = {}) {
@@ -22,7 +22,7 @@ export class GatewayAPI {
 	/**
 	 * Gets gateway information with additional metadata.
 	 *
-	 * @see {@link https://discord.com/developers/docs/events/gateway#get-gateway-bot}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/events/gateway#get-gateway-bot}
 	 * @param options - The options for fetching the gateway information
 	 */
 	public async getBot({ auth, signal }: Pick<RequestData, 'auth' | 'signal'> = {}) {

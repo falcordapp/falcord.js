@@ -73,7 +73,7 @@ All of this information can help you track down what caused the error and how to
 ### Message
 
 The most important part of the error is the message. It tells you what went wrong, which can help you track down where it originates.
-You can find a full list of messages [here](https://discord.com/developers/docs/topics/opcodes-and-status-codes#json) in the Discord API documentation.
+You can find a full list of messages [here](https://falcord.ixchats.com/developers/docs/topics/opcodes-and-status-codes#json) in the Discord API documentation.
 
 ### Path
 
@@ -85,7 +85,7 @@ As the error message tells you `[object Object]` is not a valid id, so you now k
 
 ### Code
 
-The code is another partial representation of the message, in this case, `Invalid Form Body`. You can find a full list of codes [here](https://discord.com/developers/docs/topics/opcodes-and-status-codes#json-json-error-codes)
+The code is another partial representation of the message, in this case, `Invalid Form Body`. You can find a full list of codes [here](https://falcord.ixchats.com/developers/docs/topics/opcodes-and-status-codes#json-json-error-codes)
 
 The code is also handy if you want only to handle a specific error. Say you're trying to delete a message which may or may not be there, and wanted to ignore unknown message errors. This can be done by checking the code, either manually or using discord.js constants.
 
@@ -189,7 +189,7 @@ This error originates from an invalid call to `bulkDelete()`. Make sure you are 
 
 This error happens when fetching multiple members via `GuildMemberManager#fetch()` and:
 
-- The `GuildMembers` intent is not specified or enabled in the [developer portal](https://discord.com/developers/applications).
+- The `GuildMembers` intent is not specified or enabled in the [developer portal](https://falcord.ixchats.com/developers/applications).
 - The internet connection is somewhat bad.
 
 You can specify the time to wait for with the `time` option in the `.fetch()` call. Another solution could be to move your bot to a faster infrastructure, if available.

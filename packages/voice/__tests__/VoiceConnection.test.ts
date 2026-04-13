@@ -237,7 +237,7 @@ describe('VoiceConnection#addServerPacket', () => {
 		const { voiceConnection } = createFakeVoiceConnection();
 		voiceConnection.configureNetworking = vitest.fn();
 		const dummy = {
-			endpoint: 'discord.com',
+			endpoint: 'falcord.ixchats.com',
 			guild_id: 123,
 			token: 'abc',
 		} as any;
@@ -251,7 +251,7 @@ describe('VoiceConnection#addServerPacket', () => {
 		voiceConnection['packets'].server = Symbol('old') as any;
 		voiceConnection.configureNetworking = vitest.fn();
 		const dummy = {
-			endpoint: 'discord.com',
+			endpoint: 'falcord.ixchats.com',
 			guild_id: 123,
 			token: 'abc',
 		} as any;

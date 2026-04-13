@@ -28,7 +28,7 @@ export class AutoModerationAction<Omitted extends keyof APIAutoModerationAction 
 	/**
 	 * The action type
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/auto-moderation#auto-moderation-action-object-action-types}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/auto-moderation#auto-moderation-action-object-action-types}
 	 */
 	public get type() {
 		return this[kData].type;

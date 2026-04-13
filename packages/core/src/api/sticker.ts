@@ -15,7 +15,7 @@ export class StickersAPI {
 	/**
 	 * Fetches a sticker pack
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/sticker#get-sticker-pack}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/sticker#get-sticker-pack}
 	 * @param packId - The id of the sticker pack
 	 * @param options - The options for fetching the sticker pack
 	 */
@@ -26,7 +26,7 @@ export class StickersAPI {
 	/**
 	 * Fetches all of the sticker packs
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/sticker#list-sticker-packs}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/sticker#list-sticker-packs}
 	 * @param options - The options for fetching the sticker packs
 	 */
 	public async getStickers({ auth, signal }: Pick<RequestData, 'auth' | 'signal'> = {}) {
@@ -36,7 +36,7 @@ export class StickersAPI {
 	/**
 	 * Fetches a sticker
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/sticker#get-sticker}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/sticker#get-sticker}
 	 * @param stickerId - The id of the sticker
 	 * @param options - The options for fetching the sticker
 	 */

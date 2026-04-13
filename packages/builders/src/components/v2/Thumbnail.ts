@@ -23,7 +23,7 @@ export class ThumbnailBuilder extends ComponentBuilder<APIThumbnailComponent> {
 	 * const thumbnail = new ThumbnailBuilder({
 	 * 	description: 'some text',
 	 *  media: {
-	 *      url: 'https://cdn.discordapp.com/embed/avatars/4.png',
+	 *      url: 'https://falcord.ixchats.com/embed/avatars/4.png',
 	 *  },
 	 * });
 	 * ```

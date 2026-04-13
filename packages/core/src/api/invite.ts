@@ -9,7 +9,7 @@ export class InvitesAPI {
 	/**
 	 * Fetches an invite
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/invite#get-invite}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/invite#get-invite}
 	 * @param code - The invite code
 	 * @param query - The options for fetching the invite
 	 * @param options - The options for fetching the invite
@@ -29,7 +29,7 @@ export class InvitesAPI {
 	/**
 	 * Deletes an invite
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/invite#delete-invite}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/invite#delete-invite}
 	 * @param code - The invite code
 	 * @param options - The options for deleting the invite
 	 */

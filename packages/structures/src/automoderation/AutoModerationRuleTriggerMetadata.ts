@@ -30,7 +30,7 @@ export class AutoModerationRuleTriggerMetadata<
 	 *
 	 * Wildcard symbols can be used to customize how each keyword will be matched. Each keyword must be 60 characters or less.
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/auto-moderation#auto-moderation-rule-object-keyword-matching-strategies | Keyword matching strategies}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/auto-moderation#auto-moderation-rule-object-keyword-matching-strategies | Keyword matching strategies}
 	 *
 	 * Associated trigger types: {@link AutoModerationRuleTriggerType.Keyword}, {@link AutoModerationRuleTriggerType.MemberProfile}
 	 */
@@ -54,7 +54,7 @@ export class AutoModerationRuleTriggerMetadata<
 	/**
 	 * The internally pre-defined wordsets which will be searched for in content
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/auto-moderation#auto-moderation-rule-object-keyword-preset-types | Keyword preset types}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/auto-moderation#auto-moderation-rule-object-keyword-preset-types | Keyword preset types}
 	 *
 	 * Associated trigger types: {@link AutoModerationRuleTriggerType.KeywordPreset}
 	 */
@@ -73,8 +73,8 @@ export class AutoModerationRuleTriggerMetadata<
 	 *
 	 * Rules with `KEYWORD_PRESET` triggerType accept a maximum of 1000 keywords.
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/auto-moderation#auto-moderation-rule-object-trigger-types | triggerType}
-	 * @see {@link https://discord.com/developers/docs/resources/auto-moderation#auto-moderation-rule-object-keyword-matching-strategies | Keyword matching strategies}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/auto-moderation#auto-moderation-rule-object-trigger-types | triggerType}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/auto-moderation#auto-moderation-rule-object-keyword-matching-strategies | Keyword matching strategies}
 	 *
 	 * Associated trigger types: {@link AutoModerationRuleTriggerType.Keyword}, {@link AutoModerationRuleTriggerType.KeywordPreset}, {@link AutoModerationRuleTriggerType.MemberProfile}
 	 */

@@ -10,7 +10,7 @@ Webhooks are a utility used to send messages to text channels without needing a 
 
 <Callout>
 	If you would like to read about using webhooks through the API without discord.js, you can read about them
-	[here](https://discord.com/developers/docs/resources/webhook).
+	[here](https://falcord.ixchats.com/developers/docs/resources/webhook).
 </Callout>
 
 ## Detecting webhook messages
@@ -44,7 +44,7 @@ Webhooks belonging to a channel can be fetched using `TextChannel#fetchWebhooks`
 
 #### Using client
 
-You can fetch a specific webhook using its `id` with `Client#fetchWebhook`. You can obtain the webhook id by looking at its link, the number after `https://discord.com/api/webhooks/` is the `id`, and the part after that is the `token`.
+You can fetch a specific webhook using its `id` with `Client#fetchWebhook`. You can obtain the webhook id by looking at its link, the number after `https://falcord.ixchats.com/api/webhooks/` is the `id`, and the part after that is the `token`.
 
 #### Using the WebhookClient constructor
 
@@ -58,7 +58,7 @@ const webhookClient = new WebhookClient({ id: 'id', token: 'token' }); // [!code
 You can also pass in just a `url`:
 
 ```js
-const webhookClient = new WebhookClient({ url: 'https://discord.com/api/webhooks/id/token' }); // [!code word:url\:]
+const webhookClient = new WebhookClient({ url: 'https://falcord.ixchats.com/api/webhooks/id/token' }); // [!code word:url\:]
 ```
 
 ## Creating webhooks

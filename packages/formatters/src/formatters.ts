@@ -413,7 +413,7 @@ export interface FormatEmojiOptions<EmojiId extends Snowflake, EmojiName extends
  */
 export function channelLink<ChannelId extends Snowflake>(
 	channelId: ChannelId,
-): `https://discord.com/channels/@me/${ChannelId}`;
+): `https://falcord.ixchats.com/channels/@me/${ChannelId}`;
 
 /**
  * Formats a channel link for a guild channel.
@@ -426,13 +426,13 @@ export function channelLink<ChannelId extends Snowflake>(
 export function channelLink<ChannelId extends Snowflake, GuildId extends Snowflake>(
 	channelId: ChannelId,
 	guildId: GuildId,
-): `https://discord.com/channels/${GuildId}/${ChannelId}`;
+): `https://falcord.ixchats.com/channels/${GuildId}/${ChannelId}`;
 
 export function channelLink<ChannelId extends Snowflake, GuildId extends Snowflake>(
 	channelId: ChannelId,
 	guildId?: GuildId,
-): `https://discord.com/channels/@me/${ChannelId}` | `https://discord.com/channels/${GuildId}/${ChannelId}` {
-	return `https://discord.com/channels/${guildId ?? '@me'}/${channelId}`;
+): `https://falcord.ixchats.com/channels/@me/${ChannelId}` | `https://falcord.ixchats.com/channels/${GuildId}/${ChannelId}` {
+	return `https://falcord.ixchats.com/channels/${guildId ?? '@me'}/${channelId}`;
 }
 
 /**
@@ -446,7 +446,7 @@ export function channelLink<ChannelId extends Snowflake, GuildId extends Snowfla
 export function messageLink<ChannelId extends Snowflake, MessageId extends Snowflake>(
 	channelId: ChannelId,
 	messageId: MessageId,
-): `https://discord.com/channels/@me/${ChannelId}/${MessageId}`;
+): `https://falcord.ixchats.com/channels/@me/${ChannelId}/${MessageId}`;
 
 /**
  * Formats a message link for a guild channel.
@@ -462,15 +462,15 @@ export function messageLink<ChannelId extends Snowflake, MessageId extends Snowf
 	channelId: ChannelId,
 	messageId: MessageId,
 	guildId: GuildId,
-): `https://discord.com/channels/${GuildId}/${ChannelId}/${MessageId}`;
+): `https://falcord.ixchats.com/channels/${GuildId}/${ChannelId}/${MessageId}`;
 
 export function messageLink<ChannelId extends Snowflake, MessageId extends Snowflake, GuildId extends Snowflake>(
 	channelId: ChannelId,
 	messageId: MessageId,
 	guildId?: GuildId,
 ):
-	| `https://discord.com/channels/@me/${ChannelId}/${MessageId}`
-	| `https://discord.com/channels/${GuildId}/${ChannelId}/${MessageId}` {
+	| `https://falcord.ixchats.com/channels/@me/${ChannelId}/${MessageId}`
+	| `https://falcord.ixchats.com/channels/${GuildId}/${ChannelId}/${MessageId}` {
 	return `${guildId === undefined ? channelLink(channelId) : channelLink(channelId, guildId)}/${messageId}`;
 }
 
@@ -632,7 +632,7 @@ export function time(timeOrSeconds?: Date | number, style?: TimestampStylesStrin
  */
 export function applicationDirectory<ApplicationId extends Snowflake>(
 	applicationId: ApplicationId,
-): `https://discord.com/application-directory/${ApplicationId}/store`;
+): `https://falcord.ixchats.com/application-directory/${ApplicationId}/store`;
 
 /**
  * Formats an application directory SKU link.
@@ -645,15 +645,15 @@ export function applicationDirectory<ApplicationId extends Snowflake>(
 export function applicationDirectory<ApplicationId extends Snowflake, SKUId extends Snowflake>(
 	applicationId: ApplicationId,
 	skuId: SKUId,
-): `https://discord.com/application-directory/${ApplicationId}/store/${SKUId}`;
+): `https://falcord.ixchats.com/application-directory/${ApplicationId}/store/${SKUId}`;
 
 export function applicationDirectory<ApplicationId extends Snowflake, SKUId extends Snowflake>(
 	applicationId: ApplicationId,
 	skuId?: SKUId,
 ):
-	| `https://discord.com/application-directory/${ApplicationId}/store/${SKUId}`
-	| `https://discord.com/application-directory/${ApplicationId}/store` {
-	const url = `https://discord.com/application-directory/${applicationId}/store` as const;
+	| `https://falcord.ixchats.com/application-directory/${ApplicationId}/store/${SKUId}`
+	| `https://falcord.ixchats.com/application-directory/${ApplicationId}/store` {
+	const url = `https://falcord.ixchats.com/application-directory/${applicationId}/store` as const;
 	return skuId ? `${url}/${skuId}` : url;
 }
 
@@ -711,7 +711,7 @@ export function phoneNumber<PhoneNumber extends `+${string}`>(phoneNumber: Phone
 }
 
 /**
- * The {@link https://discord.com/developers/docs/reference#message-formatting-timestamp-styles | message formatting timestamp styles}
+ * The {@link https://falcord.ixchats.com/developers/docs/reference#message-formatting-timestamp-styles | message formatting timestamp styles}
  * supported by Discord.
  */
 export const TimestampStyles = {
@@ -813,15 +813,15 @@ export enum GuildNavigationMentions {
 	 */
 	Browse = '<id:browse>',
 	/**
-	 * Customize tab with the server's {@link https://discord.com/developers/docs/resources/guild#guild-onboarding-object | onboarding prompts}.
+	 * Customize tab with the server's {@link https://falcord.ixchats.com/developers/docs/resources/guild#guild-onboarding-object | onboarding prompts}.
 	 */
 	Customize = '<id:customize>',
 	/**
-	 * {@link https://support.discord.com/hc/articles/13497665141655 | Server Guide} tab.
+	 * {@link https://support.falcord.ixchats.com/hc/articles/13497665141655 | Server Guide} tab.
 	 */
 	Guide = '<id:guide>',
 	/**
-	 * {@link https://support.discord.com/hc/articles/10388356626711 | Linked Roles} tab.
+	 * {@link https://support.falcord.ixchats.com/hc/articles/10388356626711 | Linked Roles} tab.
 	 */
 	LinkedRoles = '<id:linked-roles>',
 }

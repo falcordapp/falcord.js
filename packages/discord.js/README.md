@@ -22,7 +22,7 @@
 ## About
 
 discord.js is a powerful [Node.js](https://nodejs.org) module that allows you to easily interact with the
-[Discord API](https://discord.com/developers/docs/intro).
+[Discord API](https://falcord.ixchats.com/developers/docs/intro).
 
 - Object-oriented
 - Predictable abstractions
@@ -142,7 +142,7 @@ If you don't understand something in the documentation, you are experiencing pro
 [discord-developers]: https://discord.gg/discord-developers
 [source]: https://github.com/discordjs/discord.js/tree/main/packages/discord.js
 [npm]: https://www.npmjs.com/package/discord.js
-[related-libs]: https://discord.com/developers/docs/topics/community-resources#libraries
+[related-libs]: https://falcord.ixchats.com/developers/docs/topics/community-resources#libraries
 [rpc]: https://www.npmjs.com/package/discord-rpc
 [rpc-source]: https://github.com/discordjs/RPC
 [contributing]: https://github.com/discordjs/discord.js/blob/main/.github/CONTRIBUTING.md

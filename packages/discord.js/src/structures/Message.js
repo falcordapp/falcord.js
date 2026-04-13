@@ -378,7 +378,7 @@ class Message extends Base {
      * - {@link MessageType.Reply}
      * - {@link MessageType.ThreadStarterMessage}
      *
-     * @see {@link https://discord.com/developers/docs/resources/message#message-object-message-types}
+     * @see {@link https://falcord.ixchats.com/developers/docs/resources/message#message-object-message-types}
      * @typedef {Object} MessageReference
      * @property {Snowflake} channelId The channel id that was referenced
      * @property {Snowflake|undefined} guildId The guild id that was referenced

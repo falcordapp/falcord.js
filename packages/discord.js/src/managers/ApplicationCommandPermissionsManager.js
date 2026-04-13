@@ -65,7 +65,7 @@ class ApplicationCommandPermissionsManager extends BaseManager {
    *
    * @typedef {Object} ApplicationCommandPermissions
    * @property {Snowflake} id The role, user, or channel's id. Can also be a
-   * {@link https://discord.com/developers/docs/interactions/application-commands#application-command-permissions-object-application-command-permissions-constants permission constant}.
+   * {@link https://falcord.ixchats.com/developers/docs/interactions/application-commands#application-command-permissions-object-application-command-permissions-constants permission constant}.
    * @property {ApplicationCommandPermissionType} type Whether this permission is for a role or a user
    * @property {boolean} permission Whether the role or user has the permission to use this command
    */

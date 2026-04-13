@@ -82,7 +82,7 @@ export class Entitlement<Omitted extends keyof APIEntitlement | '' = 'ends_at' |
 	/**
 	 * Type of entitlement
 	 *
-	 * @see {@link https://discord.com/developers/docs/resources/entitlement#entitlement-object-entitlement-types}
+	 * @see {@link https://falcord.ixchats.com/developers/docs/resources/entitlement#entitlement-object-entitlement-types}
 	 */
 	public get type() {
 		return this[kData].type;

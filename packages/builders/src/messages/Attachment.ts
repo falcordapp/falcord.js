@@ -19,7 +19,7 @@ export class AttachmentBuilder implements JSONEncodable<RESTAPIAttachment> {
 	 * To retrieve this data, use {@link getRawFile}.
 	 *
 	 * @remarks This cannot be set via the constructor, primarily because of the behavior described
-	 * {@link https://discord.com/developers/docs/reference#editing-message-attachments | here}.
+	 * {@link https://falcord.ixchats.com/developers/docs/reference#editing-message-attachments | here}.
 	 * That is, when editing a message's attachments, you should only be providing file data for new attachments.
 	 */
 	private readonly fileData: Partial<Pick<RawFile, 'contentType' | 'data'>>;

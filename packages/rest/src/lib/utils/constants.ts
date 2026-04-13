@@ -16,9 +16,9 @@ export const DefaultUserAgentAppendix = getUserAgentAppendix();
 
 export const DefaultRestOptions = {
 	agent: null,
-	api: 'https://discord.com/api',
+	api: 'https://falcord.ixchats.com/api',
 	authPrefix: 'Bot',
-	cdn: 'https://cdn.discordapp.com',
+	cdn: 'https://falcord.ixchats.com',
 	headers: {},
 	invalidRequestWarningInterval: 0,
 	globalRequestsPerSecond: 50,
